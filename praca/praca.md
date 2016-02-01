@@ -1,6 +1,4 @@
-\newpage
-
-##Wstęp
+#Wstęp {-}
 
 Sealious jest to open-source'owy, wysoce deklaratywny framework
 umożliwiający tworzenie aplikacji webowych i desktopowych. Naszym celem
@@ -15,17 +13,13 @@ dla aspirujących programistów. Chcemy także, aby stał Sealious się
 przydatnym narzędziem również dla nas, jako zespołu, do przyszłego
 tworzenia oprogramowania.
 
-\newpage
-
 *\
 \centerline{„Cóż bowiem za korzyść odniesie człowiek,}
 \centerline{choćby cały świat zyskał,}
 \centerline{a na swej duszy szkodę poniósł?”\cite{bible} } \
 *\ 
 
-\newpage
-
-##Część I - Rozwiązania ułatwiające szybkie rozwijanie aplikacji
+\part{Rozwiązania ułatwiające szybkie rozwijanie aplikacji}
 
 Praca nad projektem inżynierskim uzmysłowiła naszemu zespołowi jakie
 problemy towarzyszą procesowi tworzenia nowych rozwiązań
@@ -55,9 +49,7 @@ produktywność. Poniższa część zawiera opis następujących puntków:
     mają zostać dodane. Usługa ciągłej integracji pozwali zautomatyzować
     ten proces.
 
-\newpage
-
-### 1.  Problemy związane z rozwijaniem projektów programistycznych
+#Problemy związane z rozwijaniem projektów programistycznych
 
 W trakcie tworzenia projektu inżynierskiego wystąpiło kilka problemów,
 które utrudniały pracę nad nim. Wbrew pozorom, największe kłopoty nie
@@ -70,7 +62,7 @@ O wiele poważniejsze problemy to te, które nazwałbym problemami
 „miękkimi”, tj. problemami z organizacją pracy i jej przebiegiem.
 
 W tym rozdziale zajmę się trzema problemami, które powinny być jak
-najszybciej zneutralizowane:
+najszybciej rozwiązane:
 
 1.  **Brak zaangażowania członków grupy** – bez zaangażowania projekt
     nie posiada taką ilość uwagi jaką powinien, przez to efekty pracy
@@ -115,8 +107,6 @@ zespołu (wywoływanie poczucia odpowiedzialności za innych).
 Zazwyczaj ta druga opcja powinna być wykonana najpierw, a dopiero potem
 można przejść do radykalnych środków.
 
-\newpage
-
 ####2. Brak osoby, która zarządza projektem
 
 Ten problem pojawia się najczęściej wtedy, gdy nie ma w zespole dwóch
@@ -133,7 +123,8 @@ wykonania, ponieważ nie ma autorytetu, który byłby siłą napędową grupy.
 Demokracja jest przydatna wtedy, kiedy odbywa się „burza mózgów”\
 i proponowane są rozwiązania danego problemu, natomiast samo prowadzenie
 projektu powinno spocząć na barkach osoby, która posiada posłuch wśród
-członków grupy. Wtedy praca staje się efektywna i łatwiejsza.\
+członków grupy. Wtedy praca staje się efektywna i łatwiejsza.
+
 Osoba, która bierze na siebie odpowiedzialność za projekt i czuje pewne
 zobowiązanie do jego wykonania, jeżeli również posiada charyzmę i
 posłuch wśród członków zespołu, potrafi stać się kimś, kto zapewni, że
@@ -147,8 +138,6 @@ końcowy wynik i stara się forsować kolejne zadania tak, aby końcowy
 efekt, był jak najbliżej tego, co było zakładane na początku.\
 Więcej o liderze w grupie projektowej znajduje się w rozdziale drugim.
 
-\newpage
-
 ####3. Brak umiejętnego zarządzania zadaniami
 
 Niestety zaangażowanie członków grupy jak i posiadanie lidera, który
@@ -156,7 +145,8 @@ potrafi swoją osobowością trzymać projekt w ryzach nie wystarcza, aby
 praca nad projektem była łatwa i przyjemna. Największym problemem jaki
 dotyka niemal wszystkie grupy projektowe jest brak odpowiedniego planu
 wykonania projektu. Umiejętne zarządzanie zadaniami jest tak samo ważne
-dla projektu, jak ich wykonanie.\
+dla projektu, jak ich wykonanie.
+
 Parafrazując Henry'ego Forda „Nic nie jest szczególnie trudne do
 wykonania, jeżeli podzieli się pracę na małe zadania” \cite{ford} --- te
 słowa sprawdziły się w czasie produkcji pierwszych samochodów,
@@ -166,9 +156,7 @@ się na szczegółach, które tworzą całość. Wykonanie pomniejszych zadań
 podnosi również morale, gdyż pojawia się możliwość częstszego
 celebrowania sukcesów.
 
-\newpage
-
-### 2.  Organizacja pracy – spotkania, komunikacja, narzędzia
+#Organizacja pracy – spotkania, komunikacja, narzędzia
 
 Zorganizowana grupa, to skuteczna grupa. Z moich obserwacji oraz z 
 efektów pracy naszego zespołu wynika, że jedną z najważniejszych rzeczy
@@ -189,13 +177,8 @@ W czasie formowania się grupy, w sposób naturalny wyłania się jej lider.
 Zazwyczaj jest to pomysłodawca, który jest na tyle pewny swojego
 pomysłu, że angażuje innych ludzi do projektu. Problem jaki może w tym
 miejscu wystąpić jest bycie „szefem”, a nie jego liderem. Różnicę między
-szefem a liderem pokazuje poniższa grafika: \cite{bossleader}
+szefem a liderem pokazuje Rysunek 2.1 \cite{bossleader}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{bossleader.png}
-\caption{ Boss vs Leader \label{overflow}}
-\end{figure}
 
 Innym potencjalnym problemem jest niedostateczne zaangażowanie innych
 członków, bądź nieumiejętne przekazanie idei projektu reszcie. Wtedy,
@@ -211,9 +194,13 @@ problemy kolegów. Nie zabrakło też elementów integracji – luźnych rozmów
 i dyskusji na tematy niezwiązane z projektem, żartów i oglądaniu
 krótkich filmów w internecie.
 
-\newpage
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{bossleader.png}
+\caption{ Boss vs Leader \label{overflow}}
+\end{figure}
 
-### 3.  System kontroli wersji
+#System kontroli wersji
 
 Jednym z najważniejszych elementów ułatwiających pracę programistyczną
 jest wdrożenie systemu kontroli wersji, czyli „oprogramowania służącego
@@ -244,7 +231,8 @@ następującą konwencję:
 
 -   *Branche* zawierające nowe funkcjonalności, bądź zmiany w kodzie
     nazywane były w następujący sposób: *issue\#xxx\_description*, gdzie
-    *xxx* to numer *issue* na **GitHubie**, a *description *to krótki
+    *xxx* to numer *issue* na **GitHubie**^[https://github.com/ - najpopularniejsza
+    platforma przechowująca repozytoria Git.], a *description *to krótki
     opis dokonywanej zmiany. Po ukończeniu zadania tworzony był *pull request*, który był
     rozpatrywany przez inną niż autor osobę z zespołu. Jeżeli zmiana
     został zatwierdzona, dokonywana była operacja *git merge* do
@@ -255,13 +243,13 @@ ułatwić rozwiązywanie zadań. Początkowo wszystkie propozycje zmian oraz
 zgłaszanie błędów było dodawane poprzez *issue* na platformie
 **GitHub**.
 
-\
 Pomiędzy czerwcem, a sierpniem 2015, pojawiły się w zespole propozycje
 zmiany systemu pracy. Padła wtedy propozycja, aby *branch* „master”
 zmienił nazwę na „latest”, a *branch* „dev” na „next”. Choć nowe
 nazewnictwo powodowało początkowo trudności w zrozumieniu i
 zapamiętaniu, postanowiliśmy je przyjąć, aby przetestować jego
-użyteczność.\
+użyteczność.
+
 Dodatkowo skorzystaliśmy z narzędzia o nazwie **Trello**, o którym mowa
 w rozdziale 4, na które przenieśliśmy wszystkie propozycje zmian tak,
 aby sekcja *issue* na **GitHubie** zawierała tylko zgłoszenia błędów. W
@@ -319,20 +307,18 @@ pomniejsze, które zawierają zmiany w kodzie.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{git.png}
-\caption{ Drzewo commitów \label{overflow}}
+\includegraphics[width=0.7\textwidth]{git.png}
+\caption{ Drzewo commitów na platformie GitHub \label{overflow}}
 \end{figure}
 
-\newpage
-
-### 4.  Zarządzanie zadaniami
+#Zarządzanie zadaniami
 
 Rozplanowane i dobrze przemyślanie pomysły powinny zostać umieszczone w
 miejscu, do którego każdy członek zespołu ma dostęp. Czasem zanotowanie
 ich na tablicy i przepisanie na kartkę papieru, bądź napisanie maila do
 wszystkich zainteresowanych osób nie wystarczy. Na szczęście istnieje
 wiele dostępnym narzędzi do produktywności i jedno z nich zastosowaliśmy
-w naszym projekcie – **Trello**. Daje ono możliwość stworzenia list do
+w naszym projekcie – **Trello**^[https://trello.com/]. Daje ono możliwość stworzenia list do
 przechowywanie kart, na których można zapisać zadania, pomysły,
 propozycje zmian, dodać do nich ankietę, przypisywać członków grupy, czy
 też ustawić *deadline*. Strona te umożliwia również dodawanie komentarzy
@@ -379,11 +365,9 @@ jest eksperymentalny i ciągle podlega zmianom. Oto najciekawsze z nich:
 \caption{ Trello \label{overflow}}
 \end{figure}
 
-\newpage
+#Wersjonowanie i npm
 
-### 5.  Wersjonowanie i npm
-
-**npm** jest to domyślny menadżer pakietów, zwanych również modułami,
+**npm**^[https://www.npmjs.com/] jest to domyślny menadżer pakietów, zwanych również modułami,
 dla środowiska Node.js, które automatycznie go instaluje od wersji
 0.6.3. Menadżer ten jest dostępny z poziomu linii komend i używany jest
 do zarządzania zależnościami w aplikacji. Aby zainstalować dany moduł
@@ -479,9 +463,8 @@ bowiem użytkownik dostaje dwa gotowe produkty: jeden stabilny, drugi
 zawierający najnowsze funkcjonalności, które przeszły testy wewnętrzne
 (choć mogące zawierać błędy, których nie udało się wychwycić wcześniej).
 
-\newpage
 
-### 6.  Testowanie oprogramowania i ciągła integracja
+#Testowanie oprogramowania i ciągła integracja
 
 Testowanie kodu jest przydatnym narzędziem pozwalającym zweryfikować
 poprawność napisanego kodu. Ustalenie jak kod powinien wyglądać, 
@@ -505,9 +488,13 @@ się poprawnie. Obecnie w naszym projekcie znajduje się 155 testów,
 które pokrywają 82% kodu źródłowego, obejmujące przede wszystkim funkcjonalności 
 odpowiedzialne za obsługę zasobów:
 
-![Test Coverage](coverage.png)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{coverage.png}
+\caption{ Pokrycie kodu testami jednostkowymi \label{overflow}}
+\end{figure}
 
-Testy jednostkowe pisane są za pomocą *frameworka* **MochaJS**, który
+Testy jednostkowe pisane są za pomocą *frameworka* **MochaJS**^[https://mochajs.org/], który
 znacząco ułatwia sam proces tworzenia testów:
 
 ```javascript
@@ -534,7 +521,7 @@ pierwszy argument powinna przyjmować dokładny opis przeprowadzanego testu,
 zaś drugim argumentem jest funkcja `callback`, w której dokonuje się testu.
 Może ona również zawierać argument, który określa koniec koniec testu.
 
-#### Przykłady testów jednostkowych w Sealiousie
+### Przykłady testów jednostkowych w Sealiousie
 
 `FieldType.Email` jest to deklaracja typu pola zasobu "email", który
 akceptuje tylko ciągi znaków mające strukturę adresu *email*:
@@ -668,16 +655,18 @@ W przypadku błędego rezultatu, w konsoli zostanie wypisany komunikat:
 
 
 Mechanizmem ułatwiającym wykonywanie testów jednostkowych w naszym
-projekcie jest usługa ciągłej integracji **Travis CI**, który wykrywa
+projekcie jest usługa ciągłej integracji **Travis CI**^[https://travis-ci.org/], który wykrywa
 zmiany w repozytorium na platformie **GitHub**, uruchamia nową wersję
 projektu i wykonuje testy jednostkowe oraz ostatecznie wysyła maila
 z rezultatem do osoby, która dokonała zmiany w repozytorium:
 
-![Travis mail](travis.png)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{travis.png}
+\caption{ Raport mailowy wysłany przez Travis CI \label{overflow}}
+\end{figure}
 
-\newpage
-
-### Podsumowanie części I
+#Podsumowanie części I {-}
 
 Początki pracy nad projektem nie były łatwe, ponieważ wówczas nie
 mieliśmy wystarczająco dużo doświadczenia, aby wiedzieć jak efektywniej
@@ -769,7 +758,7 @@ praca nad projektem wygląda następująco:
     -   W Sealiousie korzystamy z *frameworka* **MochaJS**, która
         ułatwia szybkie i dokładne pisanie testów.
 
-##Część II --- Rozwiązanie wspomagające pracę docelowych programistów
+\part{Rozwiązanie wspomagające pracę docelowych programistów}
 
 W dzisiejszych czasach przeciętny programista nie musi posiadać
 dogłębnej wiedzy programowania niskopoziomowego, aby napisać
@@ -819,8 +808,8 @@ programistom pracę z naszym projektem:
     w sobie wystarczającą informacją pomagającą wykryć programiście co
     poszło nie tak.
 
-
-### 1.  Deklaratywność
+\setcounter{chapter}{0}
+\chapter{Deklaratywność}
 
 Sealious jest *frameworkiem* deklaratywnym, co pozwala użytkownikowi
 skupić się na tym jaki ma być wynik działania aplikacji, jak ma się
@@ -832,7 +821,7 @@ o zasoby, czy ustanawiania kanału komunikacji klient-serwer. Dzięki
 temu można napisać w pełni działającą aplikację w kilkanaście linijek
 kodu.
 
-#### Przykład aplikacji
+### Przykład aplikacji
 
 ```javascript
 var Sealious = require("sealious"); 
@@ -902,7 +891,7 @@ potrzeb, skupiając się na tym jaki ma być wynik działania, a nie jak
 ma wyglądać przebieg pracy aplikacji.
 
 
-### 2.  Dokumentacja
+#Dokumentacja
 
 Dokumentacja projektu jest podstawową rzeczą, o którą należy zadbać,
 jeżeli chcemy, aby nasz produkt był łatwy do zrozumienia dla osób
@@ -996,9 +985,9 @@ użyteczności „Sealious Handbook”, ponadto oferujemy im możliwość
 posiadania własnego wkładu w tę pracę, ponieważ całość jest hostowana na
 serwisie **GitHub**.
 
-Obecna wersja instrukcji znajduje się w załączniku nr 1.
+Obecna wersja instrukcji znajduje się w załączniku.
 
-### 3.  Komunikaty błędów
+#Komunikaty błędów
 
 Błędy w kodzie są tak zwanym „chlebem powszednim” w życiu każdego
 programisty. Pojawiają się najczęściej wtedy, gdy zaczynamy pracę z
@@ -1041,8 +1030,6 @@ przestarzałym. Dlatego dobrym podsumowaniem wszystkich zmian jest
 książka „RESTful Web APIs” autorstwa Leonarda Richardsona, Mike'a
 Amundsena i Sama Ruby'ego \cite{restful-web-apis}, która zawiera aktualny spis wszystkich kodów
 statusów HTTP, wraz z częstotliwością ich używania.
-
-\newpage
 
 Kody statusów używane w Sealiousie (ich definicja jest tłumaczeniem
 i/lub sparafrazowaniem fragmentów książki „RESTful Web APIs”:
@@ -1164,9 +1151,8 @@ W przypadku błędu w konsoli pojawia się następujący komunikat:
                ...
 ```
 
-\newpage
 
-### Podsumowanie części II 
+#Podsumowanie części II {-}
 
 Pomoc przyszłym użytkownikom naszego projektu traktujemy bardzo
 poważnie. Dlatego staramy się dostarczyć im narzędzie, które będzie
@@ -1241,69 +1227,630 @@ kategoriami, na których się skupiamy to:
         ponieważ jest czajnikiem (imbrykiem) do herbaty.
     -   **500** (*Internet Server Error*) --- błąd w działaniu serwera.
 
+\part{Załączniki}
+
+**Sealious Handbook** (https://github.com/Sealious/sealious-handbook)
+
+###Table of contents
+
+1. Getting started
+2. Sample Sealious app
+    * Declaring our first ResourceType
+    * Adding more resources
+    * Final result
+3. Base chips
+    * Access Strategy
+        * What is an access strategy
+        * How to use access strategies
+        * Access strategies in Sealious
+        * Creating a new access strategy
+        * Common questions and errors
+    * Field Types
+        * What are field types
+        * How to use field types
+        * Field types in Sealious
+        * Creating a new field type
+        * Common questions and errors
+
 \newpage
 
-## Załączniki:
+### Getting started
+*Before starting your journey with Sealious, make sure [Node.js](https://nodejs.org/en/) is installed and set. Also we'll be using [MongoDB](https://www.mongodb.org/) in our examples.*
 
--   *Załącznik 1*: ***Załącznik1\_pokrycie\_kodu.zip*** (w nim znajduje
-    się plik *index.html*, który należy otworzyć).
--   *Załącznik 2*: ***Załącznik2\_handbook.pdf***.
+1. Open command line in your desired directory.
+2. Type in `npm init`. This is create `package.json` file, which will hold all crucial data about your project.
+    * You will be prompted several times, you can just `ENTER` through.
+3. Once `package.json` is set, type in `npm install --save sealious`. This will download Sealious from `npm` (Node Package Manager) and save the dependency in your `package.json`.
+4. We need to have some means of communication with the server. Type in `npm install --save sealious-www-server` and `npm install --save sealious-channel-rest`.
+5. To set the database, type in `npm install --save sealious-datastore-mongo`.
 
+And that's it. Note that Sealious reads its dependencies from `package.json`, so don't forget to create it.
+
+
+### Simple Sealious app
+In this section we will show you how to create a fully functional and working back-end application, with REST routes and database handling set, in just **28** lines:
+
+```javascript
+1   var Sealious = require("sealious"); 
+2
+3   Sealious.init();
+4
+5   require("./field-type.animal.js");
+6
+7   new Sealious.ChipTypes.ResourceType({
+8       name: "owner",
+9       fields: [
+10          {name: "first-name", type: "text", required: true},
+11          {name: "last-name", type: "text", required: true},
+12          {name: "address", type: "text", required: true},
+13          {name: "phone-number", type: "int", required: true}
+14          {name: "email", type: "email"}
+15      ]
+16  });
+17
+18  new Sealious.ChipTypes.ResourceType({
+19      name: "pet",
+20      fields: [
+21          {name: "species", type: "animald", required: true},
+22          {name: "name", type: "text", required: true},
+23          {name: "age", type: "int", required: true},
+24          {name: "diagnosis", type: "text", params: {max_length: 200}, required: true}
+25     ]
+26  });
+27
+28  Sealious.start();
+```
+
+We'll call this project **Veterinarian Clinic**. Basically it's main task is to store information about pets and their owners.
+
+
+#### Declaring our first ResourceType
+
+ResourceType is the core concept of Sealious. Without it, Sealious has nothing to work on.
+
+Let's create a new resource named `owner`.
+
+In the real world, a pet must have a name and some age. Here's how we'll represent it in Sealious:
+
+```javascript
+1   var Sealious = require("sealious"); 
+2
+3   Sealious.init();
+4
+5   new Sealious.ChipTypes.ResourceType({
+6       name: "owner",
+7       fields: [
+8           {name: "first-name", type: "text", required: true},
+9           {name: "last-name", type: "text", required: true},
+10          {name: "address", type: "text", required: true},
+11          {name: "phone-number", type: "int", required: true}
+12          {name: "email", type: "email"}
+13      ]
+14  });
+15
+16  Sealious.start();
+```
+
+This app consists of four parts:
+
+ * `var Sealious = require("sealious");` - a reference to Sealious,
+ * `Sealious.init();` - loads Sealious components,
+ * `new Sealious.ChipTypes.ResourceType({})` - defines a new resource-type that will be our data model,
+ * `Sealious.start();` - prepares REST routes, sets the database, loads dependencies - gets the whole thing started.
+
+This is all we need to start a new Sealious app.
+
+From now on we can communicate with the server through REST routes (the default Sealious channel):
+
+ * `GET` on URL `api/v1/owner` returns all `owner` resources,
+ * `GET` on URL `api/v1/owner/{owner_id}` returns a specific `owner` resource,
+ * `POST` on URL `api/v1/owner` with body `{name: <text>, age: <int>}` creates a new `owner` resource with given body,
+ * `PUT` and `PATCH` on URL `api/v1/owner/{owner_id}` with body `{name: <text>, age: <int>}` modifies the `owner` resource,
+ * `DELETE` on URL `api/v1/owner/{owner_id}` deletes a specific `owner` resource.
+
+
+---
+
+**Q**: *How can I communicate with the server if I don't want to use REST?*
+
+**A**: We give the developers channel REST by default. If you want to use other channel you are free to write one yourself. See X for more information.
+
+---
+
+**Q**: *I have no idea what's happening in this ResourceType thing...*
+
+**A**: Let's walk through it step by step:
+
+1. `new Sealious.ChipTypes.ResourceType({` - this line creates a new `ResourceType` object, that will enable you to work on your resources.
+2. `name: "owner",` - this is the name of our resource, that we can work with.
+3. `fields: [` - we define `fields` array that holds information about what type of data our resource can store.
+4. `{name: "first-name", type: "text", required: true},` - this is the field used by our resource. The name of the field is `name`, its type is `text` and it must be delcared (`required: true`).
+5. `{name: "last-name", type: "int", required: true}` - this is the another field used by our resource. The name of the fields is `age`, its type is `int` and it must be declared (`required: true`).
+6. `{name: "email", type: "email"}` - this defines the field named `email` with type `email` - it only accepts strings that look like and email. Note that `required: true` is absent - that means, that you don't have to include this field and the request will still be parsed correctly.
+
+And that's it.
+
+If you want to know more about `FieldType`, click [here](https://github.com/Sealious/sealious-handbook#field-types).
+
+#### Adding more resources
+
+You can add as many resources as you need. In our example, we'll add `pet` resource.
+
+```javascript
+1   var Sealious = require("sealious"); 
+2
+3   Sealious.init();
+4
+5   new Sealious.ChipTypes.ResourceType({
+6       name: "owner",
+7       fields: [
+8           {name: "first-name", type: "text", required: true},
+9           {name: "last-name", type: "text", required: true},
+10          {name: "address", type: "text", required: true},
+11          {name: "phone-number", type: "int", required: true}
+12          {name: "email", type: "email"}
+13      ]
+14  });
+15
+16  new Sealious.ChipTypes.ResourceType({
+17      name: "pet",
+18      fields: [
+19          {name: "species", type: "text", required: true},
+20          {name: "name", type: "text", required: true},
+21          {name: "age", type: "int", required: true},
+22          {name: "diagnosis", type: "text", params: {max_length: 200}, required: true}
+22      ]
+23  });
+24
+25  Sealious.start();
+```
+
+As you can see, the `pet` resource has *four* fields:
+
+1. `spieces`,
+2. `name`,
+3. `age`,
+4. `diagnosis`.
+
+The new thing here is `params: {max_length: 200}` in field `diagnosis`. This parameter says, that only strings with length up to 200 characters.
+
+And that's it. We've finished our **Veterinarian Clinic**!
+
+---
+
+**Q**: *But wait, the first code block you showed us had line `require("./field-type.animal.js");`. What's with this?*
+
+**A**: Nice eye. Here's the explanation:
+
+Sealious let's you define your own field-types, that will validate, encode or decode (and many more - see API reference) the values that's in the field.
+
+For our example, we've defined a new field-type, that checks if given animal species is acceptable by our clinic:
+
+```javascript
+1   var Sealious = require("sealious");
+2
+3   new Sealious.ChipTypes.FieldType({
+4       name: "animal",
+5       get_description: function(context, params){
+6           return "Only accepts dogs, cats and parrots.";
+7       },
+8       is_proper_value: function(accept, reject, context, params, new_value){
+9           var acceptable_animals = ['dog', 'cat', 'parrot'];
+10          var result = acceptable_animals.find( x => x === new_value);
+11
+12          result ? accept() : reject("This species of animal is not accepted");
+13      }
+14  });
+```
+
+If you want to know more about `FieldType`, click [here](https://github.com/Sealious/sealious-handbook#field-types).
+
+Now if we include our newly created field-type, we can check what's the spieces of the pet we want to add to our resources.
+
+
+#### Final result:
+```javascript
+1   var Sealious = require("sealious"); 
+2
+3   Sealious.init();
+4
+5   require("./field-type.animal.js");
+6
+7   new Sealious.ChipTypes.ResourceType({
+8       name: "owner",
+9       fields: [
+10          {name: "first-name", type: "text", required: true},
+11          {name: "last-name", type: "text", required: true},
+12          {name: "address", type: "text", required: true},
+13          {name: "phone-number", type: "int", required: true}
+14          {name: "email", type: "email"}
+15      ]
+16  });
+17
+18  new Sealious.ChipTypes.ResourceType({
+19      name: "pet",
+20      fields: [
+21          {name: "species", type: "animald", required: true},
+22          {name: "name", type: "text", required: true},
+23          {name: "age", type: "int", required: true},
+24          {name: "diagnosis", type: "text", params: {max_length: 200}, required: true}
+25     ]
+26  });
+27
+28  Sealious.start();
+```
+
+
+### Sealious base chips
+
+#### Access Strategy
+
+##### I. What is an access strategy?
+Access strategy is a function that takes a context as an argument and based on it either allows or denies access to certain resources or operations.
+
+##### II. How to use access strategies
+One of the possible ways to use an access strategy is when defining a new `resource`.
+
+```javascript
+    new Sealious.ResourceType({
+        name: "nobody_can_update_me",
+        fields: [{  name: "value", type: "text" }],
+        access_strategy: {
+            update: "noone"
+        }
+    });
+```
+
+In this example we use Access Strategy `noone` that rejects any `update` request.
+
+##### III. Access strategies in Sealious
+Sealious comes with *three* pre-defined access strategies. that are located in `lib/base_chips`.
+File `lib/base-chips/_base-chips.js` defines the order of access strategies initilizing.
+
+1. Just owner:
+    * only the owner of the resource can modify it
+2. Noone:
+    * noone can modify the resource
+3. Public:
+    * Everybody has access to the resource.
+
+
+##### IV. Creating a new access strategy
+
+##### V. Common questions and errors
+
+#### Field-Types
+
+##### I. What are field types?
+Each "field" in a ResourceType must have a field-type assigned. Field-types describe which values can and which cannot be assigned to a field. Field-type's behaviour can be adjusted using field-type parameters.
+
+A field-type can accept or reject a value, with appropriate error message.
+
+It's a field-type's responsibility to describe how to store it's values in a datatore.
+
+##### II. How to use field types?
+The example below shows a simple Sealious app:
+```javascript
+1   var Sealious = require("sealious");
+2  
+3   Sealious.init();
+4 
+5   new Sealious.ChipTypes.ResourceType({
+6      name: "person",
+7      fields: [
+8          {name: "name", type: "text", params: {max_length: 25}, required: true},
+9          {name: "age", type: "int", required: true},
+10         {name: "hair-color", type: "color"}
+11     ]
+12  });
+13
+14  Sealious.ChipManager.get_chip("channel", "rest").set_url_base("/api/v1");
+15
+16  Sealious.start();
+```
+
+Several things to note:
+
+1. There are *three* fields declared:
+    * `name`, which is of `text` type,
+    * `age`, which is of `int` type,
+    * `hair-color`, which is of `color` type.
+
+2. Each field-type describes how the field behaves and what value it contains. 
+For example, `field-type.color` accepts values like:
+    * `"black"`, 
+    * `"#000000"`, 
+    * `{r: 0, g: 0, b: 0}`,
+    but rejects values such as `"this is my color"`.
+
+3. Field `name` has defined an object called `params`, which provides additional information about the field-type. 
+In this case, `name` can have no more than `25` characters.
+Every field can have `params` object to specify what values can be accepted and what rejected.
+
+---
+
+**Q**: *But how can I actually use those field-types?*
+
+**A**: Good question.
+
+Sealious uses channel REST by default. You can send HTTP request on URL `http://localhost/api/v1/<resource_name>`. In our case, `<resource_name>` is `person`.
+
+This means that you can send, for example, HTTP POST request on URL `http://localhost/api/v1/person` with body:
+
+ * `name: Maurice`,
+ * `age: 21`,
+ * `hair-color: blue`,
+
+because of the fields defined in our app.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{http_post.png}
+\caption{ HTTP POST request\label{overflow}}
+\end{figure}
+
+Sending this request will result in adding a new user named **Maurice**, who is **21** years old and has **blue** hair color to the database.
+
+##### III. Field types in Sealious
+Sealious comes with *eleven* pre-defined field-types. that are located in `lib/base_chips`.
+File `lib/base-chips/_base-chips.js` defines the order of field-type initilizing.
+
+1. Boolean 
+    * boolean value: `true` or `false`,
+    * can be a string: `"true"` or `"false"`, 
+    * as well as numeric: `1` or `0`. 
+2. Color
+    * `"black"`, 
+    * `"#000000"`, 
+    * `{r: 0, g: 0, b: 0}`. 
+3. Date
+    * date standard ISO 8601 `YYYY-MM-DD`,
+    * rejects other date formats.
+4. Datetime
+    * timestamp - amount of miliseconds since epoch.
+5. Email
+    * email address, like something@something.sth.
+6. File
+7. Float
+    * a float number.
+8. Hashed-text
+    * hash with chosen algorithm (default `md5`),
+    * designed to hash passwords:
+        * can specify 1 or more required numbers,
+        * can specify 1 or more required capital letters,
+        * can specify 1 or more required numbers and capital letters.
+9. Int
+    * an integer number.
+10. Reference
+11. Text
+    * can specify maximum string length,
+    * can specify minimum string length.
+
+##### IV. Creating a new field type
+In this section we will show you step by step how to create your own field-type.
+We will use `field-type.color` for this example.
+
+1. Create your field-type file in `lib/base-chips/`.
+2. Add reference to `lib/base-chips/_base-chips.js`:
+    ```javascript
+    // some requires...
+    require("./field_type.color.js"); //add this
+    require("./field_type.file.js");
+    // some requires...
+    ```
+
+3. Write the skeleton of your new field-type.
+    ```javascript
+    1   var Sealious = require("sealious");
+    2
+    3   new Sealious.ChipTypes.FieldType({
+    4        
+    5   });
+    ```
+
+4. The most basic form of field-type consists of `name` property and `is_proper_value` method. Let's add them!
+    ```javascript
+    1   var Sealious = require("sealious");
+    2
+    3   new Sealious.ChipTypes.FieldType({
+    4       name: "color", // important! This is the name of your field-type
+    5       is_proper_value: function(accept, reject, context, params, new_value){ 
+    6           // checks if `new_value` is correct. If not, it rejects the request.
+    7       }
+    8   });
+    ```
+*Note*: `is_proper_value` method checks if `new_value` is correct. If not, it rejects the request.
+
+5. Since we want to create a field-type that will accept colors, we have to implement `is_proper_value` method properly, so that it will accepts values like `"black"` or `"#123FA5"` and reject values like `"silly sealy"`.
+In this example we will use a module from `npm` called `color`.
+    ```javascript
+    1   var Sealious = require("sealious");
+    2   var Color = require("color");
+    3
+    4   new Sealious.ChipTypes.FieldType({
+    5       name: "color", // important! This is the name of your field-type
+    6       is_proper_value: function(accept, reject, context, params, new_value){
+    7          // checks if `new_value` is correct. If not, it rejects the request.
+    8           try {
+    9               if (typeof (new_value) === "string")
+    10                   Color(new_value.toLowerCase());
+    11              else
+    12                  Color(new_value);
+    13          } catch (e){
+    14              reject("Value `" + new_value + "` could not be parsed as a color.");
+    15          }
+    16          accept();
+    17      },
+    18  });
+    ```
+And now, `is_proper_value` will accept those colors, that can be parsed correctly by `color` module. If the parsing cannot be done, the method will reject the `new_value` argument.
+
+6. Voila! We have created a new field-type that accepts colors! 
+
+---
+
+**Q**: *Is it all?*
+
+**A**: Yes, this is how you create a new field-type. But there **can** be more to it.
+
+Let's say, that we want to store some colors in the database. This may be troublesome, because of several ways to define a color:
+
+* `black` (explicitly), 
+* `{r: 10, g: 2, b: 200}` (RGB object),
+* `"#115DFA"` (hex value).
+
+
+So the safer approach would be parsing the colors to one, standarized form. 
+
+This is what `encode` ensures - it transforms (or encodes) the value that was given to `is_proper_value` to what we want. 
+
+```javascript
+1   var Sealious = require("sealious");
+2   var Color = require("color");
+3
+4   new Sealious.ChipTypes.FieldType({
+5       name: "color", // important! This is the name of your field-type
+6       is_proper_value: function(accept, reject, context, params, new_value){
+7            // checks if `new_value` is correct. If not, it rejects the request.
+8           try {
+9               if (typeof (new_value) === "string")
+10                  Color(new_value.toLowerCase());
+11              else
+12                  Color(new_value);
+13          } catch (e){
+14              reject("Value `" + new_value + "` could not be parsed as a color.");
+15          }
+16          accept();
+17      },
+18      encode: function(context, params, value_in_code){
+19          var color = Color(value_in_code);
+20          return color.hexString();
+21      }
+22  });
+```
+And that's it. Now you can use `color` as a field-type in your app field delcaration.
+
+
+##### V. Common questions and errors
+
+**Q**: *I created a new field-type and I want to use it in my app. But when I create a new field with my field-type and start the app, I get this error:*
+```javascript
+Error: In declaration of resource type 'person': unknown field type 'my-new-field-type' in field 'name'.
+
+```
+
+**A**: There are several causes that may throw this error (**not** including typos):
+
+1. Did you remember to add your new field-type reference to `/lib/base-chips/_base-chips.js`? 
+    ```javascript
+    // some requires
+    require("./field_type.color.js");
+    require("./field_type.file.js");
+    require("./your-new-field-type.js") // your field-type
+    // some requires
+    ```
+
+2. Did you remember to include `name` property in your field-type declaration?
+    ```javascript
+    new Sealious.ChipTypes.FieldType({
+        name: "my-new-field-type", // important! This is the name of your field-type
+        //rest of the declaration
+    });
+    ```
+
+
+---
+
+
+**Q**: *I used my new field-type in my app declaration, everything is okay when the app starts, but when I try to use HTTP POST request, nothing happens. No error, no response, nothing.*
+
+**A**: Make sure that in your field-type declaration, the `is_proper_value` method uses `accept()` argument.
+```javascript
+is_proper_value: function(accept, reject, context, params, number){
+    // checks if `new_value` correct. If not, it rejects the request.
+    var test = parseFloat(number);
+    if (test === null || test === NaN || isNaN(number) === true) {
+        reject("Value `" + number + "` is not a float number format.");
+    } else {
+        accept(); // remember to add this
+    }
+}
+```
+
+
+---
+
+
+**Q**: *I try to create a new field-type that inherits (extends) from an already-existing field-type. I added the reference to `/lib/base-chips/_base-chips.js`, but all I get is this error:*
+```
+Error: ChipManager was asked to return a chip of type `field_type` and name `<already-existing-field-type>`, but it was not found
+```
+
+**A**: File `/lib/base-chips/_base-chips.js` contains a list of currently used field-types. Those field-types are loaded one after another, sequentially. This error occurs, when you want to load your field-type **before** the already existing field-type you want to inherit from.
+
+Make sure that Sealious **first** loads that existing field-type, and **then** yours:
+```javascript
+// some requires
+require("./already-existing-field-type.js") // this is above your field-type
+require("./your-field-type.js"); // this is your field-type
+// some requires
+```
+
+\part{Bibliografia}
 \begin{thebibliography}{99}
-\addcontentsline{toc}{section}{Bibliografia}
 
 \bibitem{bible}
  Ewangelia Matuesza 16:26,
  Biblia Warszawska,
  Brytyjskie i Zagraniczne Towarzystwo Biblijne w Polsce,
- Czerwiec 1975
+ Czerwiec 1975.
 
 \bibitem{ford}
  Henry Ford,
  Data nieznana,
  \emph{„Nothing is particularly hard if you divide it into small jobs”}
  \url{http://www.goodreads.com/quotes/31505-nothing-is-particularly-hard-if-you-divide-it-into-small},
- (dostęp: 14.01.2016)
+ (dostęp: 14.01.2016).
 
 \bibitem{bossleader}
  Autor nieznany,
  Data nieznana,
  \emph{Boss vs Leader}
  \url{http://i.imgur.com/EZb2lxu.jpg},
- (dostęp: 27.12.2015)
+ (dostęp: 27.12.2015).
 
 \bibitem{control-system}
  Praca zbiorowa (Wikipedia),
  19.11.2015,
  \emph{System kontroli wersji}
  \url{https://pl.wikipedia.org/wiki/System\_kontroli\_wersji},
- (dostęp: 27.12.2015)
+ (dostęp: 27.12.2015).
 
 \bibitem{semver}
  npm,
  Data nieznane,
  \emph{Semantic version},
  \url{https://docs.npmjs.com/getting-started/semantic-versioning},
- (dostęp: 27.12.2015)
+ (dostęp: 27.12.2015).
 
 \bibitem{ux}
  Praca zbiorowa (Wikipedia),
  15.11.2015,
  \emph{User Experience}
  \url{https://pl.wikipedia.org/wiki/User_experience},
- (dostęp: 27.12.2015)
+ (dostęp: 27.12.2015).
 
  \bibitem{dontmakemethink}
- Steve Krug
+ Steve Krug,
  \emph{Don't make me think, Revisited. A common sense approach to Web usability}
  New Riders,
- 2014,
+ 2014.
 
 \bibitem{rfc2616}
  W3C,
  \emph{RFC 2616}
  \url{https://www.ietf.org/rfc/rfc2616.txt},
- Czerwiec 1999
+ Czerwiec 1999.
 
 \bibitem{restful-web-apis}
  Leonard Richardson, Mike Amumdsen, Sam Ruby,
