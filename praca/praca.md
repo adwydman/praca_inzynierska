@@ -1,8 +1,97 @@
+#Abstrakt (j. polski) {-}
+
+Niniejsza praca inżynierska skupia się na rozwiązaniach ułatwiających
+rozwijanie aplikacji (w naszym przypadku *frameworka*) oraz wspomagających
+pracę docelowych developerów. Praca podzielona jest na dwie części.
+
+Rozdziały zawarte w pierwszej części:
+
+*   Problemy związane rozwijaniem projektów informatycznych.
+*   Organizacja pracy.
+*   System kontroli wersji.
+*   Zarządzanie zadaniami.
+*   Wersjonowanie i npm.
+*   Testy oprogramowania i ciągła integracja.
+
+Rozdziały zawarte w drugiej części:
+
+*   Deklaratywność.
+*   Dokumentacja.
+*   Komunikaty błędów.
+
+#Abstract (in English) {-}
+
+This thesis focuses on solutions that facilitate application (in our case a *framework*) 
+development and support the work of target developers. The work is divided into two parts.
+
+Chapters in the first part:
+
+*   IT project development issues.
+*   Organization of work.
+*   Version control.
+*   Task management.
+*   Versioning and npm.
+*   Software testing and continuous integration.
+
+Chapters in the second part:
+
+*   Declarativity.
+*   Documentation.
+*   Error messages.
+
+# Opis całości projektu {-}
+
+Frameworki to programy ułatwiające deweloperom tworzenie aplikacji. Dzięki automatyzacji wielu procesów znacząco skracają proces pisania oprogramowania. 
+
+Sealious (wym. */si\:liəs/*) jest *deklaratywnym*, *modułowym* frameworkiem do tworzenia aplikacji webowych i desktopowych przy użyciu języka JavaScript w środowisku Node.js. Jest opublikowany jako projekt Open Source, na licencji *BSD 2-Clause*. Jego celem jest umożliwienie pisania wysokiej jakości aplikacji przy minimalnej ilości wysiłku i linijek kodu.
+
+Prace nad Sealiousem zaczęły się w październiku 2014, w ramach projektu na przedmiot Technologie Aplikacji Serwerowych^[Skład zespołu: Jan Orlik, Adrian Wydmański, Pola Mikołajczak, Mariusz Wójcik]. Po otrzymaniu zaliczenia z przedmiotu zdecydowaliśmy się kontynuować prace nad tym frameworkiem w ramach projektu inżynierskiego. 
+
+Sealious służy do tworzenia "backendu" aplikacji---nie jest narzędziem do projektowania interfejsów graficznych. Udostępnia interfejs *programistyczny* przyjazny deweloperom odpowiedzialnym za "frontend" aplikacji. 
+
+
+### Deklaratywność
+
+"Deklaratywność" oznacza, że deweloper tworzący aplikację przy użyciu Sealiousa musi tylko opisać *co* ma owa aplikacja robić, a nie *jak*. Deklaratywny opis aplikacji sealiousowej^[dla zwięzłości będziemy używać sformułowania "aplikacja sealiousowa", mając na myśli "aplikacja napisana przy użyciu frameworka Sealious"] jest czytelny i jednoznaczny dla człowieka i dla maszyny.
+
+Jak zobaczymy w następnych rozdziałach, deklaratywność Sealiousa umożliwia tworzenie w pełni funkcjonalnych aplikacji zawartych w bardzo małej ilości kodu.
+
+### Modułowość
+
+"Modułowość" oznacza, że aplikację sealiousową można łatwo rozszerzać za pomocą tzw. "pluginów". Pluginy sealiousowe są wielokrotnego użytku---co oznacza, że raz napisany plugin będzie się zachowywał prawidłowo w każdej aplikacji sealiousowej^[przykładem jest plugin "REST". Wystarczy doinstalować go do dowolnej aplikacji Sealiousowej, aby uzyskać w pełni funckjonalne REST API dla tej aplikacji - bez potrzeby żadnej dodatkowej konfiguracji.]. Pluginy mogą (ale nie muszą) zawierać imperatywny (*nie*deklaratywny) kod.
+
+### Rozwój frameworka
+
+Celem naszego projektu był rozwój Sealiousa. W trakcie prac nad nim:
+
+* zidentyfikowaliśmy i naprawiliśmy 50 problemów z kodem (brakujące funkcjonalności, bugi, niespójności w dokumentacji)
+* zwiększyliśmy objętość kodu o ok. 30% (względem stanu z dnia początku prac nad projektem)^[Może się wydawać, że 30% to nie jest dużo, ale jesteśmy dumni z faktu, że uzyskaliśmy tak duży postęp bez drastycznego zwiększania objętości kodu. Bardzo często okazywało się, że po naprawieniu buga albo dodaniu nowej funkcjonalności do Sealiousa kodu w repozytorium ubywało, ponieważ przepisaliśmy kod tak, aby rozwiązywał bardziej ogólny problem---który często bywa prostszy niż kilka konkretnych.]
+* dokończyliśmy prace nad wersją `0.6` (została ona doprowadzona do stanu `stable`) oraz równolegle rozwijaliśmy nową wersję, `0.7` (aktualnie w stanie `alpha`), bogatą w nowe funkcje i rozwiązania. 
+
+### Przykład wdrożenia
+
+Przez ostatnie pół roku rozwój Sealiousa był mocno kierowany potrzebami projektu Placetag---również realizowanego jako (osobny) projekt inżynierski na WMI UAM^[Tytuł projektu: “Placetag - aplikacja wspierająca organizację i katalogowanie miejsc”. Opiekun: dr Jacek Marciniak].
+
+Placetag to serwis internetowy stworzony za pomocą Sealiousa, pozwalający na zapisywanie miejsc na mapie oraz na łatwe wysyłanie odnośników do nich za pomocą sieci społecznościowych.
+
+Zapisane w nim miejsca można dzielić na kategorie, nadawać im "hashtagi" i wzbogacać ich opisy o zdjęcia (które po stronie serwera są skalowane i kompresowane w celu optymalizacji zużycia pasma).
+
+Serwis ten posiada dwie aplikacje klienckie---interfejs webowy oraz aplikację na platformę Android. 
+
+Dzięki zastosowaniu Sealiousa kod backendu tego serwisu ma małą objętość -  zawiera się w około 200 linijkach. 
+
+![Dwa interfejsy aplikacji Placetag - webowy i na platformę Android. Obydwa komunikują się z interfejsem programistycznym tworzonym przez Sealiousa.](placetag.png)
+
+Projekt Placetag zakończył się sukcesem - w Internecie jest już dostępna jego publiczna, "produkcyjna" wersja^[Publiczna wersja dostępna pod adresem http://placetag.pl]. 
+
+
+
 #Wstęp {-}
 
-Sealious jest to open-source'owy, wysoce deklaratywny framework
-umożliwiający tworzenie aplikacji webowych i desktopowych. Naszym celem
-jest stworzyć użyteczne narzędzie, które pozwala docelowemu programiście
+Naszym projektem inżynierskim jest Sealious --- open-source'owy, 
+wysoce deklaratywny *framework*
+umożliwiający tworzenie aplikacji webowych i desktopowych. Celem, który nam przyświeca
+jest stworzenie użytecznego narzędzia, które pozwala docelowemu programiście
 skupić się na tym **jaki** ma być końcowy efekt, a nie **jak** go
 osiągnąć.
 
@@ -44,7 +133,7 @@ produktywność. Poniższa część zawiera opis następujących puntków:
 5.  **Wersjonowanie i npm** - domyślny menadżer modułów dla środowiska
     Node.js, na którym opublikowany jest Sealious, narzuca również
     wersjonowanie projektu.
-6.  **Testy oprogramowanie i ciągła integracja** – dobrze napisane testy
+6.  **Testy oprogramowania i ciągła integracja** – dobrze napisane testy
     kodu źródłowego pomagają walidować istniejący kod oraz zmiany, które
     mają zostać dodane. Usługa ciągłej integracji pozwali zautomatyzować
     ten proces.
@@ -486,13 +575,15 @@ oznacza to, że zmiana ta jest niezgodna z obowiązującymi w danej wersji
 funkcjonalnościami i powinna być poprawiona tak, aby testowany kod wykonywał
 się poprawnie. Obecnie w naszym projekcie znajduje się 155 testów, 
 które pokrywają 82% kodu źródłowego, obejmujące przede wszystkim funkcjonalności 
-odpowiedzialne za obsługę zasobów:
+odpowiedzialne za obsługę zasobów.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{coverage.png}
-\caption{ Pokrycie kodu testami jednostkowymi \label{overflow}}
+\includegraphics[width=0.6\textwidth]{coverage.png}
+\caption{ Pokrycie kodu testami jednostkowymi w Sealiousie \label{overflow}}
 \end{figure}
+
+\newpage
 
 Testy jednostkowe pisane są za pomocą *frameworka* **MochaJS**^[https://mochajs.org/], który
 znacząco ułatwia sam proces tworzenia testów:
@@ -765,7 +856,7 @@ dogłębnej wiedzy programowania niskopoziomowego, aby napisać
 funkcjonalne, efektywne i przede wszystkim spełniające swoje zadanie
 programy. Powodem tego stanu rzeczy jest ogromna ilość narzędzi
 programistycznych, które ułatwiają pisanie kodu. Codziennie grupy
-developerskie wypuszczają nową bibliotekę albo frameworka, które
+developerskie wypuszczają nową bibliotekę albo *frameworka*, które
 ułatwiają życie setkom, jeżeli nie tysiącom, programistów na całym
 świecie.
 

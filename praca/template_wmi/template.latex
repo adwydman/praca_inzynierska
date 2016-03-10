@@ -1,4 +1,4 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$,twoside,openright]{$documentclass$}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
@@ -24,6 +24,14 @@ $endif$
 {\contentsmargin{0pt}\large}                        % unnumbered entry format
 {\titlerule*[.5pc]{.}\contentspage}                 % filler-page format (e.g dots)
 []  
+
+\titlecontents{part}
+              [0em]
+              {\normalsize\bfseries\protect\addvspace{15pt}}%
+              {\brlap[\baselineskip]}
+              {}%
+              { \titlerule\contentspage}%
+
 
 \newcommand\blankpage{%
   \null
